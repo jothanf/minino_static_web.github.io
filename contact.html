@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap">
+    <title>CONTACTO</title>
+</head>
+<body>
+    <div id="headerContainer"></div>
+    
+    <div>
+        <nav id="breadcrumb">Inicio > Contacto</nav>
+    </div>
+
+    <div>
+        <h2>CONTACTO</h2>
+        <h4>TELEFONO</h4>
+    </div>
+
+    <div id="footerContainer"></div>
+
+    <script>
+        // Fetch and include header.html using JavaScript
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('headerContainer').innerHTML = data;
+            });
+
+        // Fetch and include footer.html using JavaScript
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footerContainer').innerHTML = data;
+            });
+    </script>
+    
+</body>
+<body>
+
+</body>
+</html>

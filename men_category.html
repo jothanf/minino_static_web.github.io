@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap">
+    <title>MEN CATEGORY</title>
+</head>
+<body>
+    <div id="headerContainer"></div>
+    
+    <div>
+        <nav id="breadcrumb">Inicio   >   Perfumes de Hombre</nav>
+    </div>
+    <hr>
+    <div id="cards">
+        <div class="card">
+            <img src="static/men/212_vip_silver.jpg" alt="articulo">
+            <p>212 VIP Silver </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/creed_silver.jpg" alt="articulo">
+            <p>Creed Silver </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/lacoste_black.jpg" alt="articulo">
+            <p>Lacoste Black </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/agua_de_gio.jpg" alt="articulo">
+            <p>Agua de Gio </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/creed_viking.jpg" alt="articulo">
+            <p>Creed Viking </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/lacoste_blanc.jpg" alt="articulo">
+            <p>Lacoste Blanc </p>
+        </div>
+        <div class="card">
+            <img src="static/men/al_haramain.jpg" alt="articulo">
+            <p>Al Haramain </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/diesel_fuel_for_life.jpg" alt="articulo">
+            <p>Diesel Fuel for Life </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/lacoste_magnetic.jpg" alt="articulo">
+            <p>Lacoste Magnetic </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/blue_de_chanel.jpg" alt="articulo">
+            <p>Blue de Chanel </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/gean_paul.jpg" alt="articulo">
+            <p>Jean Paul </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/one_millon.jpg" alt="articulo">
+            <p>One Million </p>
+        </div>
+        <div class="card">
+            <img src="static/men/bur_berry_men.jpg" alt="articulo">
+            <p>Bur Berry Men </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/givenchy_men.jpg" alt="articulo">
+            <p>Givenchy Men </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/phantom.jpg" alt="articulo">
+            <p>Phantom </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/ch_bad_boy.jpg" alt="articulo">
+            <p>CH Bad Boy </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/hb_botled_blac.jpg" alt="articulo">
+            <p>Hugo Boss Bottled Black </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/polo_blue.jpg" alt="articulo">
+            <p>Polo Blue </p>
+        </div>
+        <div class="card">
+            <img src="static/men/ck_eternity.jpg" alt="articulo">
+            <p>CK Eternity </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/hb_the_scent.jpg" alt="articulo">
+            <p>Hugo Boss The Scent </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/polo_red.jpg" alt="articulo">
+            <p>Polo Red </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/ck_euforia_men.jpg" alt="articulo">
+            <p>CK Euforia Men </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/hb_unlimited.jpg" alt="articulo">
+            <p>Hugo Boss Unlimited </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/sauvage_dior_elixir.jpg" alt="articulo">
+            <p>Sauvage Dior Elixir </p>
+        </div>
+        <div class="card">
+            <img src="static/men/creed_aventus.jpg" alt="articulo">
+            <p>Creed Aventus </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/invictus.jpg" alt="articulo">
+            <p>Invictus </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/versace_eros.jpg" alt="articulo">
+            <p>Versace Eros </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/creed_imperian.jpg" alt="articulo">
+            <p>Creed Imperian </p>
+        </div>
+        
+        <div class="card">
+            <img src="static/men/issy_miyaky_ppor_homme.jpg" alt="articulo">
+            <p>Issy Miyaky Pour Homme</p>
+        </div>
+                                        
+    </div>
+
+    <div id="footerContainer"></div>
+
+    <script>
+        // Fetch and include header.html using JavaScript
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('headerContainer').innerHTML = data;
+            });
+
+        // Fetch and include footer.html using JavaScript
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footerContainer').innerHTML = data;
+            });
+    </script>
+    
+</body>
+</html>

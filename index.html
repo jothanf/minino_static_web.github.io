@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>PERFUMERIA MINIÑO</title>
+</head>
+<body>
+    <div id="headerContainer"></div>
+
+    <div class="slider-container">
+        <div class="slider">
+          <img src="static/fem/212_sexy.jpg" alt="Imagen 1">
+          <img src="static/men/agua_de_gio.jpg" alt="Imagen 2">
+          <img src="static/fem/bur_berry_fem.jpg" alt="Imagen 3">
+          <img src="static/men/creed_viking.jpg" alt="Imagen 2">
+        </div>
+      </div>
+    <div id="cards">
+        <div class="card">
+            <img src="static/updates/bg-menu-perfumes.jpg" alt="articulo" >
+        </div>
+        
+        <div class="card">
+            <img src="static/updates//images (2).jpg" alt="articulo" style="height: 200px;">
+        </div>
+        
+        <div class="card">
+            <img src="static/updates/images.jpg" alt="articulo">
+        </div>                          
+    </div>
+
+    <script>
+        // Fetch and include header.html using JavaScript
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('headerContainer').innerHTML = data;
+            });
+
+        // Fetch and include footer.html using JavaScript
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footerContainer').innerHTML = data;
+            });
+
+        
+        $(document).ready(function() {
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                const slideWidth = $('.slider img').width();
+                const newTransformValue = -index * slideWidth;
+                $('.slider').css('transform', 'translateX(' + newTransformValue + 'px)');
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % $('.slider img').length;
+                showSlide(currentSlide);
+            }
+
+            setInterval(nextSlide, 2000); // Cambia de imagen cada 2 segundos (ajusta según sea necesario)
+            });
+    </script>
+</body>
+</html>

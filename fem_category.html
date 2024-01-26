@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap">
+    <title>FEM CATEGORY</title>
+</head>
+<body>
+    <div id="headerContainer"></div>
+    
+    <div>
+        <nav id="breadcrumb">Inicio  >  Perfumes de Mujer</nav>
+    </div>
+    <hr>
+    <div id="cards">
+        <div class="card">
+            <img src="static/fem/212_sexy.jpg" alt="articulo">
+            <p>212 - Sexy</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/212_vip_rose.jpg" alt="articulo">
+            <p>212 - VIP Ros</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/360_red.jpg" alt="articulo">
+            <p>360 - Red</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/black_xs.jpg" alt="articulo">
+            <p>Paco Rabanne - Blac XS</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/bur_berry_fem.jpg" alt="articulo">
+            <p>Bur Berry</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/ch.jpg" alt="articulo">
+            <p>Carolina Herrera - CH</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/ch_good_girl.jpg" alt="articulo">
+            <p>Carolina Herrera - Good Girl</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/chanel_eau_fraiche.jpg" alt="articulo">
+            <p>Chanel - Eau Fraiche</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/chanel_n5.jpg" alt="articulo">
+            <p>Chanel - N'5</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/ck_euforia.jpg" alt="articulo">
+            <p>Calvin Klein - Euphoria</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/ckin2u.jpg" alt="articulo">
+            <p>Calvin Klein - CKin2u</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/creed_flowers.jpg" alt="articulo">
+            <p>Creed - Flower</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/givenchy_amarige.jpg" alt="articulo">
+            <p>Givenchy - Amarige</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/givenchy_irresistible.jpg" alt="articulo">
+            <p>Givenchy - Irresistible</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/gucci_bloom.jpg" alt="articulo">
+            <p>Gucci - Bloom</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/gucci_guilty.jpg" alt="articulo">
+            <p>Gucci - Guilty</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/gucci_rush.jpg" alt="articulo">
+            <p>Gucci - Rush</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/hugo_woman.jpg" alt="articulo">
+            <p>Hugo Boos - Woman</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/la_vida_es_bella.jpg" alt="articulo">
+            <p>Lancome - La Vie est Belle</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/lacoste_magnetic_fem.jpg" alt="articulo">
+            <p>Lacoste - Magentic</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/lacoste_rose.jpg" alt="articulo">
+            <p>Lacoste - Rose</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/ligth_blue.jpg" alt="articulo">
+            <p>Dolce & Gabanna - Ligth Blue</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/moschino_toy_2_bubble.jpg" alt="articulo">
+            <p>Moschino - Toy 2 Bubble</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/olimpea.jpg" alt="articulo">
+            <p>Paco Rabanne - Olimpea</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/paris_hilton.jpg" alt="articulo">
+            <p>Paris Hilton</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/paris_hilton_can_can.jpg" alt="articulo">
+            <p>Paris Hilton - Can Can</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/versace_bright_crystal.jpg" alt="articulo">
+            <p>Versace - Bright Crystal</p>
+        </div>
+        <div class="card">
+            <img src="static/fem/versace_yellow_diamond.jpg" alt="articulo">
+            <p>Versace - Yellow Diamond</p>
+        </div>
+        
+        
+    </div>
+
+    <div id="footerContainer"></div>
+
+    <script>
+        // Fetch and include header.html using JavaScript
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('headerContainer').innerHTML = data;
+            });
+
+        // Fetch and include footer.html using JavaScript
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footerContainer').innerHTML = data;
+            });
+    </script>
+    
+</body>
+</html>
